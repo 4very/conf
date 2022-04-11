@@ -123,3 +123,14 @@ export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/b
 ZSH_HIGHLIGHT_STYLES[suffix-alias]=fg=040
 ZSH_HIGHLIGHT_STYLES[precommand]=fg=040
 
+# $ if [ -r ~/.zshrc ]; then echo 'export GPG_TTY=$(tty)' >> ~/.zshrc; \
+#   else echo 'export GPG_TTY=$(tty)' >> ~/.zprofile; fi
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
+
+
+export GOPATH="/Users/hebe/dev/go/"
+
+# aliases
+#alias gpsm = 'g push origin main'
+#alias gpld = 'g pull origin main'
