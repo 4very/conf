@@ -8,7 +8,11 @@ rm /home/vscode/.zshrc
 cp -a /home/vscode/conf/zsh/. /home/vscode/
 rm -rf /home/vscode/conf
 
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-brew install thefuck
+sudo apt update
+sudo apt install -y python3-dev python3-pip python3-setuptools
+pip3 install thefuck --user
+
+sudo apt install autojump
 
 /bin/zsh -i -c "source /home/vscode/.zshrc"
+
