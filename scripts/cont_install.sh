@@ -4,5 +4,7 @@ git clone --depth=1 https://github.com/romkatv/powerlevel10k.git /home/vscode/.o
 mkdir /home/vscode/.antigen
 curl -L git.io/antigen > /home/vscode/.antigen/antigen.zsh
 
-# rm /home/vscode/.zshrc
-# cp -a /home/vscode/conf/zsh/. /home/vscode/
+rm /home/vscode/.zshrc
+cp -a /home/vscode/conf/zsh/. /home/vscode/
+
+rm -rf /home/vscode/conf
