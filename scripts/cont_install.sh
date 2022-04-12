@@ -6,7 +6,9 @@ curl -L git.io/antigen > /home/vscode/.antigen/antigen.zsh
 
 rm /home/vscode/.zshrc
 cp -a /home/vscode/conf/zsh/. /home/vscode/
-
 rm -rf /home/vscode/conf
+
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+brew install thefuck
 
 /bin/zsh -i -c "source /home/vscode/.zshrc"
