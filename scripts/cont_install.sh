@@ -8,3 +8,5 @@ rm /home/vscode/.zshrc
 cp -a /home/vscode/conf/zsh/. /home/vscode/
 
 rm -rf /home/vscode/conf
+
+/bin/zsh -i -c "source /home/vscode/.zshrc"
